@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rejoy";
+}
+@font-face {
+    font-family: rejoy;
+    src: url(Rejouice-Headline.ttf);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    
+    position: relative;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#pagecontent{
+    position: relative;
+    height: 100vh;
+    font-family: "rejouice headline";
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: white;
+    flex-direction: column;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+   
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+nav h4{
+    font-weight: 400;
+}
+#pagecontent h1{
+    font-size: 27vw;
+    font-weight: 100;
+}
+#pagecontent h1 span{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: rejoy;
+}
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #FF5F38;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 9;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#cursorr{
+    height: 3vw;
+    width: 3vw;
+    background-color: #0c0c0c;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 9;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#page2 #content{
+    height: 100px;
+    padding: 3vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#page2 #content h1{
+    font-weight: 100;
+    border-bottom: 2px solid rgb(202, 199, 199);
+}
+#page2 #content h2{
+    font-weight: 300;
+    border-bottom: 2px solid rgb(196, 194, 194);
+}
+#page2 p{
+    width: 80%;
+    position: absolute;
+    left: 14%;
+    font-size: 4vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+#page3top{
+    text-align: center;
+    height: 40vh;
+}
+#page3top h4{
+    margin-bottom: 2vw;
+    font-size: 1vw;
+    font-weight: 400;
+}
+#page3top h4 span{
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: black;
+    font-size: 0.7vw;
+}
+#page3top h2{
+    font-size: 5vw;
+}
+#pageelement{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+#pageelement .box{
+    height: 100%;
+    background-color: black;
+    width: 32%;
+    position: relative;
+}
+#pageelement .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#pageelement .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: all ease 1s;
+}
+#pageelement .box:hover img{
+    opacity: 0;
+}
+#page4{
+    height: 130vh;
+    width: 100%;
+   position: relative;
+}
+
+#page4  p{
+    width: 100%;
+    position: absolute;
+    padding: 0px 20px;
+    font-size: 3vw;
+}
+
+#page4 #content {
+    height: 100px;
+    padding: 3vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure #content has positioning */
+}
+#page4 video{
+    position: absolute;
+    height: 85%;
+    left: 22%;
+    top: 28%;
+}
+#page4 svg{
+    position: absolute;
+    height: 60%;
+    left: 29%;
+    top: 40%;
+}
+#page4 .extra{
+    position: absolute;
+    left: 43%;
+    top: 66%;
+    opacity: 0.8;
+    font-weight: 100;
+    font-size: 1.7vw;
+    color: #fff;
+}
+#extradiv{
+    height: 20vh;
+}
+#page5{
+    height: 130vh;
+    width: 100%;
+    padding: 10vw 0;
+    position: relative;
+    background-color: black;
+}
+#page5 h1{
+    font-size: 10vw;
+    color: #fff;
+    border-bottom: 2px solid rgb(187, 184, 184);
+}
+#swiper{
+    height: 60vh;
+    width: 100%;
+    
+    position: relative;
+    margin-top: -5%;
+}
+.swiper {
+    width: 120%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 400px;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 18%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
